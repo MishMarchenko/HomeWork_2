@@ -11,7 +11,11 @@ public class Main {
         }
             System.out.println(Arrays.toString(array));
 
-
-
+        for (int b = 10; b > 0; b--){
+            for (int c = 10; c > 0; c--) {
+                System.out.println(b + "*" + c + "=" + b*c);
+            }
+            System.out.println();
+        }
     }
 }
