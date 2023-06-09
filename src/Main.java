@@ -16,7 +16,7 @@ public class Main {
             System.out.println(partTwo());
             break;
             case 3:
-            System.out.println(partTree());
+            System.out.println(partThree());
             break;
             case 4:
             System.out.println(partFour());
@@ -49,7 +49,7 @@ public class Main {
         }
         return "";
     }
-    public static String partTree(){
+    public static String partThree(){
         System.out.println("Let's count to 10 using While Loop");
         int a = 0;
         while(a < 10){
