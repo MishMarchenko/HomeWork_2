@@ -88,6 +88,7 @@ public class Main {
         return "";
     }
     public static String partSix(){
+        System.out.println("Insertion sort");
         int [] array = {98, 56, 87, 4, 90, 54};
         for (int i = 1; i < array.length; i++){
             int tmp = array[i];
@@ -102,6 +103,7 @@ public class Main {
         return str;
     }
     public static int partFive(){
+        System.out.println("Min value in Array");
         int [] array = {9, 98, 67, 45, 4, 69, 32, 5, 1, 45};
         int i = array[0];
         for (int a = 1; a < array.length; a++){
