@@ -3,26 +3,32 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello Dmitriy! Check the required part of the homework!");
+        System.out.println("Hello Dmitriy! Check my full homework!");
         System.out.println("What homework item do you want to check?");
-        System.out.println("Choose 1,2,3,4");
+        System.out.println("Choose 1,2,3,4,5,6");
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
         switch (i) {
             case 1:
-            System.out.println(partOne());
-            break;
+                System.out.println(partOne());
+                break;
             case 2:
-            System.out.println(partTwo());
-            break;
+                System.out.println(partTwo());
+                break;
             case 3:
-            System.out.println(partThree());
-            break;
+                System.out.println(partThree());
+                break;
             case 4:
-            System.out.println(partFour());
-            break;
+                System.out.println(partFour());
+                break;
+            case 5:
+                System.out.println(partFive());
+                break;
+            case 6:
+            System.out.println(partSix());
+                break;
             default:
-                System.out.println("Don't be cunning, you set only 4 required tasks!)))");
+                System.out.println("Don't be cunning, you set only 6 tasks!)))");
         }
     }
     public static String partOne() {
@@ -80,5 +86,28 @@ public class Main {
             System.out.println();
         }
         return "";
+    }
+    public static String partSix(){
+        int [] array = {98, 56, 87, 4, 90, 54};
+        for (int i = 1; i < array.length; i++){
+            int tmp = array[i];
+            int a = i;
+            while (a > 0 && array[a - 1] > tmp){
+                array[a] = array[a - 1];
+                a--;
+            }
+            array[a] = tmp;
+        }
+        String str = Arrays.toString(array);
+        return str;
+    }
+    public static int partFive(){
+        int [] array = {9, 98, 67, 45, 4, 69, 32, 5, 1, 45};
+        int i = array[0];
+        for (int a = 1; a < array.length; a++){
+            if (array[a] < i){
+                i = array[a];
+            }
+        }return i;
     }
 }
